@@ -1,6 +1,6 @@
 
 
-**โดย:** นักศึกษาชั้นปีที่ 2 สาขาวิศวกรรมระบบ IoT และสารสนเทศ  
+**โดย:** นายพิชญุตม์ อิ่มใจ นักศึกษาชั้นปีที่ 2 สาขาวิศวกรรมระบบ IoT และสารสนเทศ KMITL 
 **ระยะเวลา:** เมษายน 2026  
 **Stack:** Cowrie · Grafana · Loki · Telegram Alert · GCP
 
@@ -40,16 +40,13 @@ Telegram Alert (real-time)
 
 ## Environment
 
-|Component|รายละเอียด|
-|---|---|
-|Cloud|Google Cloud Platform (GCP)|
-|VM|e2-micro — 2 vCPU, 1GB RAM + 1GB Swap|
-|OS|Ubuntu 24.04|
-|Honeypot|Cowrie (latest)|
-|Monitoring|Grafana + Loki + Promtail|
-|Alert|Telegram Bot|
+Cloud : Google Cloud Platform (GCP)
+VM e2-micro : 2 vCPU, 1GB RAM + 1GB Swap
+OS : Ubuntu 24.04
+Honeypot : Cowrie (latest)
+Monitoring : Grafana + Loki + Promtail
+Alert : Telegram Bot
 
----
 
 ## ผลลัพธ์ที่ได้
 
@@ -57,31 +54,31 @@ Telegram Alert (real-time)
 
 ### IP ที่เข้ามามากที่สุด
 
-|อันดับ|IP|จำนวนครั้ง|
-|---|---|---|
-|1|170.130.201.38|10 ครั้ง|
-|2|51.158.205.203|6 ครั้ง|
-|3|45.148.10.121|5 ครั้ง|
-|4|47.84.101.65|3 ครั้ง|
-|5|146.190.83.66|3 ครั้ง|
+IP : จำนวนครั้ง
+
+170.130.201.38 : 10 ครั้ง
+51.158.205.203 : 6 ครั้ง
+45.148.10.121 : 5 ครั้ง
+47.84.101.65 : 3 ครั้ง
+146.190.83.66 : 3 ครั้ง
 
 ### Password ที่ bot ใช้บ่อยที่สุด
 
-|อันดับ|Password|จำนวนครั้ง|
-|---|---|---|
-|1|admin|7 ครั้ง|
-|2|orangepi|4 ครั้ง|
-|3|P|4 ครั้ง|
-|4|root|1 ครั้ง|
-|5|support|1 ครั้ง|
+Password : จำนวนครั้ง
+
+admin : 7 ครั้ง
+orangepi : 4 ครั้ง
+P : 4 ครั้ง
+root : 1 ครั้ง
+support : 1 ครั้ง
 
 ---
 
 ## สิ่งที่น่าสนใจที่เจอ
 
-### 1. Bot เข้ามาเร็วมากจนน่าตกใจ
+### 1. Bot เข้ามาเร็วมาก
 
-ไม่ได้บอกใครเลยว่ามี server ตัวนี้อยู่ แต่ภายในไม่กี่ชั่วโมงหลัง deploy มี bot เข้ามา scan แล้ว แสดงว่ามีระบบที่ scan ทุก IP บน internet ตลอดเวลา ไม่มีทางซ่อน server ได้เลยถ้าเชื่อมต่อ internet
+ผมไม่ได้บอกใครเลยว่ามี server ตัวนี้อยู่ แต่ภายในไม่กี่ชั่วโมงหลัง deploy มี bot เข้ามา scan แล้ว แสดงว่ามีระบบที่ scan ทุก IP บน internet ตลอดเวลา ไม่มีทางซ่อน server ได้เลยถ้าเชื่อมต่อ internet
 
 ### 2. Bot ลอง IoT Default Credentials โดยเฉพาะ
 
