@@ -1,0 +1,7 @@
+# Sensitive files
+alert.py
+config/promtail-config.yaml
+
+# Logs
+*.log
+*.json
